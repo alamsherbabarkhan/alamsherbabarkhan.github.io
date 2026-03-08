@@ -3,66 +3,107 @@
 <head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <title>Alam Sher | Agricultural Engineer</title>
 
 <style>
 
 body{
-font-family: Arial;
-margin:auto;
-padding:40px;
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
 line-height:1.6;
-background:#f8f8f8;
+background:#f4f7f4;
+color:#333;
 }
 
-.container{
-background:white;
-padding:40px;
-border-radius:8px;
-box-shadow:0 0 10px rgba(0,0,0,0.05);
-}
+/* HERO SECTION */
 
-.header{
+.hero{
+background:linear-gradient(120deg,#2e7d32,#4caf50);
+color:white;
+padding:60px 10%;
 display:flex;
 align-items:center;
-gap:25px;
+gap:40px;
+flex-wrap:wrap;
 }
 
-.header img{
-width:120px;
-height:120px;
+.hero img{
+width:220px;
+height:220px;
 border-radius:50%;
 object-fit:cover;
 object-position:top;
-display:block;
+border:5px solid white;
 }
 
-h1{
+.hero-text h1{
 margin:0;
+font-size:42px;
+}
+
+.hero-text p{
+margin:8px 0;
+font-size:18px;
+}
+
+.button{
+display:inline-block;
+padding:12px 20px;
+background:white;
 color:#2e7d32;
+text-decoration:none;
+border-radius:6px;
+margin-top:12px;
+font-weight:bold;
+}
+
+.button:hover{
+background:#e8f5e9;
+}
+
+/* CONTENT */
+
+.container{
+padding:60px 10%;
+max-width:1200px;
+margin:auto;
 }
 
 .section{
-margin-top:35px;
+margin-bottom:50px;
+}
+
+h2{
+color:#2e7d32;
+margin-bottom:10px;
 }
 
 ul{
 padding-left:20px;
 }
 
-.button{
-display:inline-block;
-padding:10px 18px;
-background:#2e7d32;
-color:white;
-text-decoration:none;
-border-radius:5px;
-margin-top:10px;
+.card{
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.05);
 }
 
-.button:hover{
-background:#256528;
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+/* FOOTER */
+
+.footer{
+text-align:center;
+padding:40px;
+background:#2e7d32;
+color:white;
 }
 
 </style>
@@ -71,13 +112,14 @@ background:#256528;
 
 <body>
 
-<div class="container">
+<!-- HERO -->
 
-<div class="header">
+<div class="hero">
 
 <img src="profile-pic.jpeg">
 
-<div>
+<div class="hero-text">
+
 <h1>Alam Sher</h1>
 <p>Agricultural Engineer</p>
 <p>University of Agriculture Faisalabad</p>
@@ -88,44 +130,99 @@ background:#256528;
 
 </div>
 
-<div class="section">
+<!-- MAIN CONTENT -->
+
+<div class="container">
+
+<div class="section card">
 
 <h2>About</h2>
 
 <p>
-Agricultural Engineering graduate from the University of Agriculture Faisalabad
-with interests in irrigation systems, soil management, agricultural machinery
-and sustainable farming technologies.
+Alam Sher is an Agricultural Engineering graduate from the University of Agriculture Faisalabad.
+He is passionate about advancing modern agricultural practices through engineering
+solutions that improve crop productivity, optimize irrigation systems, and promote
+sustainable farming technologies.
+</p>
+
+<p>
+His academic background and practical exposure focus on improving agricultural
+efficiency using engineering principles, water management strategies,
+and modern agricultural machinery.
 </p>
 
 </div>
 
 <div class="section">
 
-<h2>Skills</h2>
+<h2>Agricultural Expertise</h2>
 
-<ul>
-<li>Irrigation Engineering</li>
-<li>Soil & Water Management</li>
-<li>Agricultural Machinery</li>
-<li>Crop Production Systems</li>
-</ul>
+<div class="grid">
+
+<div class="card">
+<h3>Irrigation Engineering</h3>
+<p>Design and optimization of irrigation systems to improve water efficiency and crop productivity.</p>
+</div>
+
+<div class="card">
+<h3>Soil & Water Management</h3>
+<p>Understanding soil moisture dynamics and sustainable water usage in agriculture.</p>
+</div>
+
+<div class="card">
+<h3>Agricultural Machinery</h3>
+<p>Evaluation and improvement of farm machinery performance and agricultural mechanization.</p>
+</div>
+
+<div class="card">
+<h3>Crop Production Systems</h3>
+<p>Engineering approaches to enhance crop yield, sustainability and farm productivity.</p>
+</div>
+
+</div>
 
 </div>
 
 <div class="section">
 
-<h2>Research / Projects</h2>
+<h2>Research & Projects</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Efficient Irrigation Systems</h3>
+<p>Design and evaluation of irrigation solutions aimed at maximizing water efficiency in agricultural fields.</p>
+</div>
+
+<div class="card">
+<h3>Soil Moisture Monitoring</h3>
+<p>Research on soil moisture monitoring techniques to improve crop yield and irrigation scheduling.</p>
+</div>
+
+<div class="card">
+<h3>Agricultural Machinery Analysis</h3>
+<p>Study and analysis of machinery efficiency to improve mechanized farming practices.</p>
+</div>
+
+</div>
+
+</div>
+
+<div class="section card">
+
+<h2>Professional Interests</h2>
 
 <ul>
-<li>Design and analysis of efficient irrigation systems</li>
-<li>Soil moisture monitoring for improved crop yield</li>
-<li>Study of agricultural machinery efficiency</li>
+<li>Sustainable Agriculture</li>
+<li>Smart Irrigation Technologies</li>
+<li>Agricultural Mechanization</li>
+<li>Water Resource Management</li>
+<li>Precision Agriculture</li>
 </ul>
 
 </div>
 
-<div class="section">
+<div class="section card">
 
 <h2>Curriculum Vitae</h2>
 
@@ -133,7 +230,7 @@ and sustainable farming technologies.
 
 </div>
 
-<div class="section">
+<div class="section card">
 
 <h2>Contact</h2>
 
@@ -141,6 +238,10 @@ and sustainable farming technologies.
 
 </div>
 
+</div>
+
+<div class="footer">
+© 2026 Alam Sher | Agricultural Engineer
 </div>
 
 </body>
