@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>Alam Sher | Agricultural Engineer</title>
 
 <style>
@@ -12,18 +14,54 @@ margin:auto;
 max-width:900px;
 padding:40px;
 line-height:1.6;
+background:#f8f8f8;
+}
+
+.container{
+background:white;
+padding:40px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.05);
+}
+
+.header{
+display:flex;
+align-items:center;
+gap:25px;
+}
+
+.header img{
+width:120px;
+height:120px;
+border-radius:60px;
+object-fit:cover;
 }
 
 h1{
+margin:0;
 color:#2e7d32;
 }
 
-header{
-margin-bottom:40px;
+.section{
+margin-top:35px;
 }
 
-.section{
-margin-top:30px;
+ul{
+padding-left:20px;
+}
+
+.button{
+display:inline-block;
+padding:10px 18px;
+background:#2e7d32;
+color:white;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
+}
+
+.button:hover{
+background:#256528;
 }
 
 </style>
@@ -32,42 +70,76 @@ margin-top:30px;
 
 <body>
 
-<header>
+<div class="container">
+
+<div class="header">
+
+<img src="profile.jpg">
+
+<div>
 <h1>Alam Sher</h1>
 <p>Agricultural Engineer</p>
-<p>Graduate | University of Agriculture Faisalabad</p>
-</header>
+<p>University of Agriculture Faisalabad</p>
+
+<a class="button" href="https://linkedin.com/in/USERNAME" target="_blank">LinkedIn</a>
+
+</div>
+
+</div>
 
 <div class="section">
+
 <h2>About</h2>
+
 <p>
 Agricultural Engineering graduate from the University of Agriculture Faisalabad
-with interests in irrigation systems, soil management, and sustainable
-agriculture technologies.
+with interests in irrigation systems, soil management, agricultural machinery
+and sustainable farming technologies.
 </p>
+
 </div>
 
 <div class="section">
+
 <h2>Skills</h2>
+
 <ul>
 <li>Irrigation Engineering</li>
-<li>Agricultural Machinery</li>
 <li>Soil & Water Management</li>
+<li>Agricultural Machinery</li>
 <li>Crop Production Systems</li>
 </ul>
+
 </div>
 
 <div class="section">
-<h2>Education</h2>
-<p>
-BSc Agricultural Engineering<br>
-University of Agriculture Faisalabad
-</p>
+
+<h2>Research / Projects</h2>
+
+<ul>
+<li>Design and analysis of efficient irrigation systems</li>
+<li>Soil moisture monitoring for improved crop yield</li>
+<li>Study of agricultural machinery efficiency</li>
+</ul>
+
 </div>
 
 <div class="section">
+
+<h2>Curriculum Vitae</h2>
+
+<a class="button" href="cv.pdf" target="_blank">Download CV</a>
+
+</div>
+
+<div class="section">
+
 <h2>Contact</h2>
+
 <p>Email: example@email.com</p>
+
+</div>
+
 </div>
 
 </body>
